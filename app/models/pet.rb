@@ -1,13 +1,12 @@
+# frozen_string_literal: true
+
 class Pet < ApplicationRecord
-
   def icon_creator
-
-    case self.species
-    when "dog"
-      return "dog.png"
+    case species
+    when 'dog'
+      'dog.png'
     else
-      return "cat.png"
+      'cat.png'
     end
-
   end
 end
