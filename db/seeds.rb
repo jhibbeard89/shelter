@@ -14,7 +14,7 @@
     species: %w[cat dog].sample,
     found_on: Faker::Date.between(from: '2023-09-01', to: '2023-09-12'),
     age: rand(1..20),
-    gender: %w[m f].sample,
+    gender: %w[male female].sample,
     available: [true, false].sample
   )
 end

@@ -9,4 +9,7 @@ class Pet < ApplicationRecord
       'cat.png'
     end
   end
+
+  enum gender: { male: 0, female: 1 }
+
 end

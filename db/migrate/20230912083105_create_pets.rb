@@ -6,7 +6,7 @@ class CreatePets < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :species
       t.integer :age
-      t.string :gender
+      t.integer :gender
       t.boolean :available
       t.date :found_on
 
