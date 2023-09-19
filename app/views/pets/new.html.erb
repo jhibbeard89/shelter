@@ -1,0 +1,12 @@
+<h1 class="mt-5 mb-5">Add a new Pet</h1>
+
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :gender, collection: ["f", "m"] %>
+  <%= f.input :available %>
+  <%= f.input :found_on %>
+  <%= f.input :age %>
+  <%= f.input :species, collection: ["dog", "cat"] %>
+
+  <%= f.button :submit, class: "btn btn-success" %>
+<% end %>
